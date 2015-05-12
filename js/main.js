@@ -14,7 +14,7 @@
         getResults: '&',
         onSelect: '&'
       },
-      templateUrl: 'admin/directives/search_autocomplete.html',
+      templateUrl: '../html/main.html',
       require: '?ngModel',
       link: function(scope, element, attrs, ngModelCtrl){
         scope.$parent.select = function(row){
