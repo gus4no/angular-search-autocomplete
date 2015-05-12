@@ -1,6 +1,6 @@
 {
   "name": "angular-search-autocomplete",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": [
       "js/search_autocomplete.js",
       "css/search_autocomplete.css",
