@@ -1,13 +1,13 @@
 {
   "name": "angular-search-autocomplete",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": [
       "js/search_autocomplete.js",
       "css/search_autocomplete.css",
       "html/search_autocomplete.html"
   ],
   "dependencies": {
-    "fontawesome": ">4.3.0"
+    "fontawesome": ">=4.3.0"
   },
   "homepage": "https://github.com/gus4no/angular-search-autocomplete",
   "authors": [
