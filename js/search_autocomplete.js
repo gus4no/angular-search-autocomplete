@@ -27,7 +27,7 @@
           }
         };
       },
-      controller: ['$rootScope', '$scope', 'config', function($rootScope, $scope, config){
+      controller: ['$rootScope', '$scope', function($rootScope, $scope){
         var charTreshold = parseInt($scope.charTreshold) || 3;
         var selectedItemIndex = 0;
 
@@ -42,7 +42,7 @@
         $scope.search = function($event){
           if($scope.searchTerm.length > 0){ $scope.searching = true; }
 
-          if($scope.searchTerm.length == 0 || $event.keyCode == config.keyCodes.esc){
+          if($scope.searchTerm.length == 0 || $event.keyCode == 27){
             $scope.resetData();
           }else if($scope.searchTerm.length > charTreshold) {
 
