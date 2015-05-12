@@ -1,9 +1,15 @@
+/**
+ * Search autocomplete Directive
+ *
+ * version 0.4
+ * http://github.com/gus4no/angular-search-autocomplete
+ *
+ * by Gustavo Robles
+ * gustavo.robles@crowdint.com
+ */
 (function(){
   'use strict';
-
-  var app = angular.module('bk.directives');
-
-  app.directive('searchAutocomplete', function(){
+  angular.module('SearchAutocomplete', []).directive('searchAutocomplete', function(){
     return{
       restrict: 'E',
       transclude: true,
@@ -109,4 +115,5 @@
       scope.$apply(fn);
     }
   }
+  
 })();
