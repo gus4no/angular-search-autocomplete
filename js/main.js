@@ -1,7 +1,7 @@
 /**
  * Search autocomplete Directive
  *
- * version 0.4
+ * version 1.0.5
  * http://github.com/gus4no/angular-search-autocomplete
  *
  * by Gustavo Robles
@@ -20,7 +20,16 @@
         getResults: '&',
         onSelect: '&'
       },
-      templateUrl: '../html/main.html',
+      template: '<div class="search-autocomplete">' +
+                  '<div class="search">' +
+                    '<input type="text" placeholder="{{placeholder}}" data-ng-keyup="search($event)" data-ng-model="searchTerm"/>' +
+                    '<span data-ng-click="resetData()">' +
+                       '<i data-ng-class="{\'fa-times\': searching, \'fa-search\': !searching}" class="fa" />' +
+                    '</span>' +
+                  '</div>' +
+                  '<div data-ng-class="{\'expanded\': showList}" data-ng-transclude="data-ng-transclude" class="results" />' +
+                '</div>' +
+                '<div data-ng-click="resetData()" data-ng-if="showList" class="search-autocomplete-overlay" />',
       require: '?ngModel',
       link: function(scope, element, attrs, ngModelCtrl){
         scope.$parent.select = function(row){
@@ -115,5 +124,5 @@
       scope.$apply(fn);
     }
   }
-  
+
 })();

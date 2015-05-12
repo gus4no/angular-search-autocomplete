@@ -1,11 +1,14 @@
 {
   "name": "angular-search-autocomplete",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": [
       "js/search_autocomplete.js",
       "css/search_autocomplete.css",
       "html/search_autocomplete.html"
   ],
+  "dependencies": {
+    "fontawesome": ">v4.3.0"
+  },
   "homepage": "https://github.com/gus4no/angular-search-autocomplete",
   "authors": [
     "Gustavo Robles <gustavo.robles@crowdint.com>"
