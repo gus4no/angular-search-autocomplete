@@ -1,0 +1,7 @@
+.search-autocomplete
+  .search
+    input(type="text", placeholder="{{placeholder}}", data-ng-keyup="search($event)", data-ng-model="searchTerm")
+    span(data-ng-click="resetData()")
+      i.fa(data-ng-class="{'fa-times': searching, 'fa-search': !searching}")
+  .results(data-ng-class="{'expanded': showList}", data-ng-transclude)
+.search-autocomplete-overlay(data-ng-click="resetData()", data-ng-if="showList")

@@ -1,0 +1,21 @@
+{
+  "name": "angular-search-autocomplete",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gus4no/angular-search-autocomplete",
+  "authors": [
+    "Gustavo Robles <gustavo.robles@crowdint.com>"
+  ],
+  "description": "A quick way to add an autocomplete input field for any resource",
+  "keywords": [
+    "angular",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

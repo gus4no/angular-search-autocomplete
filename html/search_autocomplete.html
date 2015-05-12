@@ -1,0 +1,7 @@
+<div class="search-autocomplete">
+    <div class="search">
+        <input type="text" placeholder="{{placeholder}}" data-ng-keyup="search($event)" data-ng-model="searchTerm"/><span data-ng-click="resetData()"><i data-ng-class="{'fa-times': searching, 'fa-search': !searching}" class="fa"></i></span>
+    </div>
+    <div data-ng-class="{'expanded': showList}" data-ng-transclude="data-ng-transclude" class="results"></div>
+</div>
+<div data-ng-click="resetData()" data-ng-if="showList" class="search-autocomplete-overlay"></div>
